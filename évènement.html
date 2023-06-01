@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>évènement</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="styleevenement.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+</head>
+<body>
+    <nav>
+    <div class="container">
+        <div class="naviguation">
+        <ul class="nav-links">
+            <li>
+                <a href="index.html" data-text="Accueil">Accueil</a>
+            </li>
+            <li>
+                <a href="index.html" data-text="Nos meilleures ventes">Nos engagement</a>
+            </li>
+            <li>
+                <a href="index.html" data-text="Nos plantes">Nos Adoptions</a>
+            </li>
+            <li>
+                <a href="évènement.html" data-text="évènement">évènement</a>
+            </li>
+        </ul>
+        <div class="burger-container">
+            <div class="burger"></div>
+        </div>
+    </div>
+    <div class="content">
+        <h1 class="big-title">
+            "La Journée Mondiale des Chats : Unis pour Sauver les Félins"
+        </h1>
+        <p class="text">La Journée Mondiale des Chats est un événement
+                         international créé dans le but de sensibiliser le monde entier à la 
+                         protection et au sauvetage des chats. Organisé chaque année le 30 juin,
+                        cet événement rassemble des amoureux des chats, des organisations de protection des animaux,
+                        des vétérinaires et des volontaires dévoués du monde entier.
+                    </p>
+    <img src="images/chatsoigner2.png" alt="" class="chat-soigner">            
+    </div>
+    <div class="feature">
+    <h2 class="title-feature">
+        Ation effectuées 
+    </h2>
+    <ul class="action">
+        <li>Campagnes de stérilisation/castration</li><br>
+        <li>Adoptions d'Animaux</li><br>
+        <li>Sensibilisation à la responsabilité des propriétaires de chats</li><br>
+        <li>Soins vétérinaires et traitements médicaux</li><br>
+        <li>Programmes de sauvetage</li>
+        <li>Campagnes de sensibilisation sur les réseaux sociaux</li>
+    </ul>
+    </div>
+    <div class="footer">
+        <span class="copyrights">&copy; 2023 - M.Maselli Site association</span>
+        <a href="conditions.html" class="conditions">Condition générales de vente</a>
+    </div>
+    </nav>
+    </div>
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
