@@ -1,0 +1,122 @@
+.container {
+    display: grid;
+    grid-template-areas:
+      "nav"
+      "content"
+      "feature"
+      "footer";
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  .naviguation {
+    grid-area: nav;
+    background-color: rgb(222, 255, 228);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+  .nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .content {
+    grid-area: content;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .big-title {
+    font-family: "Abril Fatface", cursive;
+  }
+  
+  .text {
+    text-align: left;
+  }
+  
+  .chat-soigner {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .feature {
+    grid-area: feature;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title-feature {
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  
+  .action li {
+    text-align: left;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background: rgb(222, 255, 228);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .conditions {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  /* Styles for mobile screens */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-rows: auto auto 1fr auto;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links li {
+      margin: 10px;
+    }
+  
+    .content {
+      text-align: justify;
+    }
+  }
+  
+  /* Styles for smaller mobile screens */
+  @media (max-width: 480px) {
+    .big-title {
+      font-size: 24px;
+    }
+  
+    .action li {
+      font-size: 14px;
+    }
+  
+    .footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
